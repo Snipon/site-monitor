@@ -1,0 +1,18 @@
+{
+  "sites":[
+    {"id": "apple", "name": "Apple", "url": "https://apple.com"},
+    {"id": "myspace", "name": "MySpace", "url": "https://myspace.com"},
+    {"id":"google","name": "Google", "url": "https://google.com"},
+    {"id":"akqa","name": "AKQA", "url": "https://www.akqa.com"},
+    {"id":"s3n","name": "S3N", "url": "https://s3n.dk"},
+    {"id": "microsoft", "name": "Microsoft", "url": "https://www.microsoft.com"},
+    {"id": "facebook", "name": "Facebook", "url": "https://www.facebook.com"},
+    {"id": "berlinske", "name": "Berlinske", "url": "https://www.b.dk"},
+    {"id": "dr", "name": "DR", "url": "https://www.dr.dk"},
+    {"id": "tv2", "name": "TV2", "url": "https://tv2.dk"},
+    {"id": "example", "name": "Example", "url": "https://example.com"},
+    {"id": "apple", "name": "Apple", "url": "https://apple.com"},
+    {"id": "viking", "name": "Total Viking Power", "url": "http://www.viking.virkelighed.dk/"}
+  ]
+}
+
