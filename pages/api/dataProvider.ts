@@ -7,7 +7,6 @@ export default class DataProvider {
     return config;
   }
   public async ping() {
-    console.log(this.apiEndpoint);
     const result = await axios.get(`${this.apiEndpoint}/ping`);
     return result.data;
   }

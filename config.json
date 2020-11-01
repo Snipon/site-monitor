@@ -1,6 +1,5 @@
 {
   "sites":[
-    {"id": "apple", "name": "Apple", "url": "https://apple.com"},
     {"id": "myspace", "name": "MySpace", "url": "https://myspace.com"},
     {"id":"google","name": "Google", "url": "https://google.com"},
     {"id":"akqa","name": "AKQA", "url": "https://www.akqa.com"},

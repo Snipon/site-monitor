@@ -66,10 +66,9 @@ function SiteMonitor({ ping }) {
 
 export async function getStaticProps() {
   const ping = await dataProvider.ping();
-
   return {
     props: {
-      ping,
+      ping: ping.sites,
     },
   };
 }
