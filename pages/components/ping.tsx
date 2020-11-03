@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { Check, Close } from '@material-ui/icons';
 import DataProvider from '../api/dataProvider';
@@ -23,10 +23,10 @@ const dataProvider = new DataProvider();
 
 const Ping: React.FC<PingProps> = ({ url }) => {
   const [data, setData] = useState({ alive: false, ping: null });
-  dataProvider.ping(url).then((res) => {
-    console.log(res);
+  useEffect(async () => {
+    const res = await dataProvider.ping(url);
     setData(res);
-  });
+  }, []);
   return (
     <Container>
       {data.ping && <Time>{`${data.ping}ms`}</Time>}
