@@ -13,13 +13,18 @@ app.get('/', (req, res) => {
   }
 });
 
-app.get('/ping', async (req, res) => {
+app.get('/ping', async (req, res, next) => {
   try {
-    const output = await ping();
-    res.statusCode = 200;
-    res.json(output);
+    const { url } = req.query;
+
+    if (!url) {
+      res.status(400).send('No URL param...');
+    }
+
+    const output = await ping(url);
+    res.status(200).json(output);
   } catch (error) {
-    console.log(error);
+    next(error);
   }
 });
 
